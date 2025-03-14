@@ -5086,7 +5086,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 </tbody>
 </table>
-<!--
+
   <script>
 document.addEventListener('DOMContentLoaded', function() {
   const trainerCells = document.querySelectorAll('td.trainers-col');
@@ -5100,7 +5100,15 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-  -->
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('td.trainers-col').forEach(cell => {
+    cell.removeAttribute('contenteditable');
+  });
+});
+</script>
+  
 <br>
 <h3 class="merged-file">    ZORUA // Kotarō // battle with Kotarō in your party (disguised wild pokemon)</h3>
 <br>
